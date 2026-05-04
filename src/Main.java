@@ -12,7 +12,6 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-
         System.out.print("What is the width? ");
         width = scanner.nextDouble();
 
@@ -21,7 +20,7 @@ public class Main {
 
         area = width * length;
 
-        System.out.println("The area of the rectangle is : " + area);
+        System.out.println("The area of the rectangle is : " + area + "cm²");
 
         scanner.close();
     }

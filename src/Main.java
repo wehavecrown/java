@@ -1,44 +1,28 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args){
 
-        // VARIABLES
+        // Calculate area of a rectangle
 
-        // INT
-        int age = 30;
-        int year = 2026;
-        int quantity = 1;
-        // DOUBLE
-        double price = 19999.99;
-        double gpa = 3.5;
-        double temperature = 12.5;
-        // CHAR
-        char grade = 'A';
-        char symbol = '!';
-        char currency = '$';
-        // BOOLEAN
-        boolean isStudent = true;
-        boolean forSale = false;
-        boolean isOnline = true;
+        double width = 0;
+        double length = 0;
+        double area = 0;
+
+        Scanner scanner = new Scanner(System.in);
 
 
-        // STRING
-        String name = "Adelani";
-        String food = "Pizza";
-        String email= "dake123@gmail.com";
-        String car = "Mustang";
-        String color = "red";
+        System.out.print("What is the width? ");
+        width = scanner.nextDouble();
 
+        System.out.print("What is the length? ");
+        length = scanner.nextDouble();
 
-        System.out.println("Your choice is" + " " + color + " " + year + " " + car);
-        System.out.println("The price is: " + currency + price);
+        area = width * length;
 
-        if(forSale){
-            System.out.println("There is a " + car + " for sale");
-        } else {
-            System.out.println("The " + car + " is not for sale");
-        }
+        System.out.println("The area of the rectangle is : " + area);
 
+        scanner.close();
     }
-
 }

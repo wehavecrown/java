@@ -4,36 +4,34 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //MAD LIBS GAME
+
 
         Scanner scanner = new Scanner(System.in);
 
-        String adjective1;
-        String noun1;
-        String adjective2;
-        String verb1;
-        String adjective3;
+        String item;
+        double price;
+        int quantity;
+        char currency = '$';
+        double total;
 
-        System.out.print("Enter an adjective: ");
-        adjective1 = scanner.nextLine();
+        //SHOPPING CART
 
-        System.out.print("Enter a noun: ");
-        noun1 = scanner.nextLine();
+        System.out.print("What item would you like to buy?: ");
+        item = scanner.nextLine();
 
-        System.out.print("Enter an adjective: ");
-        adjective2 = scanner.nextLine();
+        System.out.print("What is the price for each?: ");
+        price = scanner.nextDouble();
 
-        System.out.print("Enter a verb end with -ing: ");
-        verb1 = scanner.nextLine();
+        System.out.print("How many would you like?: ");
+        quantity = scanner.nextInt();
 
-        System.out.print("Enter an adjective: ");
-        adjective3 = scanner.nextLine();
+        total = price * quantity;
 
-        System.out.println("\nToday i went to a " + adjective1 + " zoo.");
-        System.out.println("In an exhibit, i saw a " + noun1 + ".");
-        System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
-        System.out.println("I was " + adjective3 + "!");
+        System.out.println("\nYou bought " + quantity + " " + item + "/s");
+        System.out.println("Your total is " + currency + total);
+
 
         scanner.close();
     }
+
 }

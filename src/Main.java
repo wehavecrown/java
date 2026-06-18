@@ -2,23 +2,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // NESTED WHILE LOOP
+        int nums[][] = new int[3][4];
 
-        int i = 1;
-
-        while (i <= 4) {
-            System.out.println("Hi " + i);
-
-            int j = 1;
-            while (j <= 3) {
-                System.out.println("Hello " + j);
-                j++;
+        for (int i = 0; i < nums.length; i++){
+            for (int j = 0; j < nums[i].length; j++){
+                nums[i][j] = (int)(Math.random() * 10);
             }
-
-            i++;
         }
 
-        System.out.println("the value of i is: " + i);
+        for (int n[] : nums){
+            for (int m: n){
+                System.out.print(m + " ");
+            }
+            System.out.println();
+        }
     }
 }
-

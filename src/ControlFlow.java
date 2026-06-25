@@ -93,6 +93,18 @@ public class ControlFlow {
         }
         System.out.println();
 
+        // LABELED BREAK
+        // out of nested loops
 
+        outerLoop:
+        for (int row = 0; row < 3; row++) {
+            for (int col = 0; col < 3; col++) {
+                if (row == 1 && col == 1) {
+                    break outerLoop; // breaks both loops
+                }
+                System.out.print("(" + row + "," + col + ") ");
+            }
+        }
+        System.out.println();
     }
 }
